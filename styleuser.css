@@ -1,0 +1,811 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto';
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*For User's pages*/
+header {
+    background: #FEE12B;
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    position: a;
+    height: 130px;
+    position: fixed;
+}
+
+.dashboard {
+    font-family: Rubik;
+    font-size: 20px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    background: black;
+    user-select: none;
+}
+
+label.logo {
+    color: black;
+    font-size: 60px;
+    line-height: 150px;
+    padding: 0 100px;
+    font-weight: bolder;
+    margin-left: 66vh;
+    ;
+
+}
+
+.sidebar {
+    position: fixed;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    margin-top: 130px;
+    background: #FEE12B;
+    transition: all .5s ease;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+}
+
+.sidebar ul ul {
+    position: absolute;
+    visibility: hidden;
+    left: 101%;
+    top: 21%;
+    background-color: #FDCE2A;
+    width: 90%;
+    transition: all 0.03s;
+}
+
+.sidebar ul li:hover > ul {
+    visibility: visible;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul ul li :hover {
+    background-color: #FEE12B;
+    transform: scale(1.05);
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn00,
+label #cancel {
+    position: absolute;
+    background: #FEE12B;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn00 {
+    left: 40px;
+    top: 140px;
+    font-size: 35px;
+    color: black;
+    padding: 6px 12px;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -180px;
+    margin-left: 20px;
+    top: 165px;
+    font-size: 25px;
+    color: black;
+    padding: 4px 8px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 200px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+.btn3:hover {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 25px
+}
+
+section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+#span1 {
+    z-index: 1111;
+    margin-left: 3vw;
+    color: white;
+    font-size: 9px;
+}
+
+
+/*sections*/
+#home {
+    height: 791px;
+    margin-top: top: 165px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    font-size: 120px;
+
+}
+
+#bookticket {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#managemovienowplaying {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#managemoviecomingsoon {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#createshowtime {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+#manageemployee {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#employeedetails {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#movieshowdetails {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#moviedetails {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#about {
+    height: 790px;
+    top: 165px;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+#contact {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+#profile {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    background-color: #FEE12B;
+    margin-top: 260px;
+}
+
+.textbox {
+    width: 80%;
+    overflow: hidden;
+    outline: none;
+    font-size: 18px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+#btnedit {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    font-family: Mukta;
+}
+
+#btneditpass {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    font-family: Mukta;
+}
+
+#btnedit:hover {
+    color: yellow;
+    background-color: black;
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+#btneditpass:hover {
+    color: yellow;
+    background-color: black;
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+#settings {
+    height: 790px;
+    top: 165px;
+    display: inline-block;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+/*booking ticket*/
+select {
+    border: 0 !important;
+    background: black;
+    flex: 1;
+    padding: 0 .5em;
+    color: #FEE12B;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Mukta;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    line-height: 3;
+    background: black;
+    overflow: hidden;
+    border-radius: .25em;
+    border: 2px solid #FEE12B;
+
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: black;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: #FEE12B;
+}
+
+[type="date"] {
+    background: black url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+/* custom styles */
+#date {
+    height: 55px;
+    border-radius: 5px;
+    background-color: black;
+    padding: 3px 5px;
+    color: yellow;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid yellow;
+}
+
+#time {
+    height: 55px;
+    border-radius: 5px;
+    background-color: black;
+    padding: 3px 5px;
+    color: yellow;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid yellow;
+}
+
+.seattype {
+    font-size: 25px;
+    font-weight: 50px;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color: yellow;
+    padding: 25px;
+    font-family: Mukta;
+    letter-spacing: 10px;
+}
+
+
+/*seats*/
+.screen {
+    width: 500px;
+    height: 30px;
+    background: yellow;
+    color: black;
+    line-height: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.smallBox::before {
+    content: ".";
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+.greenBox::before {
+    content: "";
+    background: Green;
+}
+
+.redBox::before {
+    content: "";
+    background: Red;
+}
+
+.emptyBox::before {
+    content="";
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color: #ccc;
+}
+
+.seats {
+    border: 1px solid red;
+    background: yellow;
+}
+
+#makepayment {
+    background-color: #FEE12B;
+    border: none;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 550px;
+    margin-top: 80px;
+}
+
+#makepayment:hover {
+    transform: scale(1.1);
+}
+
+#createshow {
+    background-color: #FEE12B;
+    border: none;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 450px;
+    margin-top: 30px;
+}
+
+#createshow:hover {
+    transform: scale(1.1);
+}
+
+
+
+#addemployee {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#addemployee:hover {
+    transform: scale(1.1);
+}
+
+#updateemployee {
+    background-color: #FEE12B;
+    width: 50%;
+    border: none;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#updateemployee:hover {
+    transform: scale(1.1);
+}
+
+#deleteemployee {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#deleteemployee:hover {
+    transform: scale(1.1);
+}
+
+#findemployee {
+    background-color: #FEE12B;
+    border: none;
+    color: black;
+    width: 50%;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#findemployee:hover {
+    transform: scale(1.08);
+}
+
+#addmovienowplaying {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#addmovienowplaying:hover {
+    transform: scale(1.1);
+}
+
+#updatemovienowplaying {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#updatemovienowplaying:hover {
+    transform: scale(1.1);
+}
+
+#deletemovienowplaying {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#deletemovienowplaying:hover {
+    transform: scale(1.1);
+}
+
+#findmovienowplaying {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#findmovienowplaying:hover {
+    transform: scale(1.1);
+}
+
+#addmoviecomingsoon {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#addmoviecomingsoon:hover {
+    transform: scale(1.1);
+}
+
+#updatemoviecomingsoon {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#updatemoviecomingsoon:hover {
+    transform: scale(1.1);
+}
+
+#deletemoviecomingsoon {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#deletemoviecomingsoon:hover {
+    transform: scale(1.1);
+}
+
+#findmoviecomingsoon {
+    background-color: #FEE12B;
+    border: none;
+    width: 50%;
+    color: black;
+    font-family: Mukta;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+#findmoviecomingsoon:hover {
+    transform: scale(1.1);
+}
+
+.textbox1 {
+    width: 150%;
+    overflow: hidden;
+    outline: none;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #FEE12B;
+}
+
+.textbox1 i {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox1 input {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.file::before {
+    content: 'Select movie poster';
+    color: yellow;
+    display: inline-block;
+    background: black;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 100%;
+}
+
+.file:hover::before {
+    border-color: black;
+}
+
+.file:active::before {
+    background: black;
+}
